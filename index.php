@@ -18,8 +18,9 @@ include("./inc/Page_meta.php"); ?>
 					Wedding websites <span itemprop="areaServed" itemscope itemtype="https://schema.org/City"><span itemprop="name">Long Sutton</span></span>, <span itemprop="areaServed" itemscope itemtype="https://schema.org/State"><span itemprop="name">Lincolnshire</span></span>
 				</p>
 				<h1>
-					Give your <span class="accent-text">Wedding</span> the <span class="accent-text">Website</span> it deserves
+					Coming Soon!
 				</h1>
+				<p>Wedding websites that will wow your guests. </p>
 
 				
 			</div>

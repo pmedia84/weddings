@@ -24,30 +24,8 @@
                     </a>
                 </li>
                 <?php endif;?>
-                <li>
-                    <a class="" href="/">Home</a>
-                </li>
-                <li>
-                    <a class="" href="../website-design-lincolnshire">Websites</a>
-                </li>
-                <li>
-                    <a class="" href="../website-design-lincolnshire#pricing">Pricing</a>
-                </li>
 
-                <li>
-                    <a class="" href="../website-portfolio">Portfolio</a>
-                </li>
 
-                <li>
-                    <a class="" href="../about">About Us</a>
-                </li>
-                <li>
-                    <a class="" href="contact">Contact Us</a>
-                </li>
-
-                <li>
-                    <a class="cta" href="">Weddings</a>
-                </li>
             </ul>
 
         </div>
