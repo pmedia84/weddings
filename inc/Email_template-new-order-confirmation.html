@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ebeae9;
+
+        }
+      h2, h3,h4{
+            margin: 0.75rem 0 .25rem;
+        }
+        p{
+            margin: 0;
+            line-height: 1.75;
+        }
+        .email-body {
+            border: 1px solid rgb(154, 158, 162);
+            background-color: #fff;
+        }
+
+        .header {
+            
+            color: #fff;
+            padding: 2rem;
+        }
+
+        .email-content {
+            padding: 2rem;
+        }
+
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" style="width: 95%; max-width: 600px; margin: 0 auto; background-color: #fff;">
+        <img src="" alt="">
+        <div class="header" style="background-color: #9dbea8;">
+            <h1>Order confirmation #{{order_id}}</h1>
+        </div>
+        <div class="email-content"  >
+            <h2>&#128077; Thank you for your order. </h2>
+            <p>{{client_name}}, here is a confirmation of your order.</p>
+            <h3>Service</h3>
+            <p>{{service_name}}</p>
+            <p>{{service_price}} per month</p>
+            <h3>Your Details</h3>
+            <h4>Name</h4>
+            <p>{{client_name}}</p>
+            <h4>Address</h4>
+            <p>{{street_address}}, {{city}}, {{county}}, {{post_code}}</p>
+            <h4>Contact Details</h4>
+            <p><strong>Phone No.</strong> {{tel}}</p>
+            <p><strong>Email</strong> {{email}}</p>
+            <h3>Business Details</h3>
+            <h4>Business Name</h4>
+            <p>{{business_name}}</p>
+            <h4>Current Domain Name</h4>
+            <p>{{url}}</p>
+            <h4>Website Details</h4>
+            <p>{{message}}</p>
+            <h2>What's next?</h2>
+            <p>We will get in touch with you via email to request more information on your website that you require. From that we will then discuss a roadmap of your new website and a suggested launch date. </p>
+            <h3>Information required:</h3>
+            <p>Please have as much of this ready as possible for when we contact you.</p>
+            <ul style="background-color: #fff;">
+                <li>Logo</li>
+                <li>Color scheme (If available, don't panic if you don't have this)</li>
+                <li>Business information, such as; About Us, your services, any price list you may want etc etc</li>
+                <li>Any design ideas you may have, not essential as we will work on a design with you.</li>
+                <li>Any special features you might want to integrate</li>
+            </ul>
+            <p>Any questions for us? We are here for you every step of the way, so feel free to contact us on our details below with any questions. Or you can reply to this email.</p>
+            <h3>Our contact details</h3>
+            <p><strong>Phone:</strong> <a href="tel:+07502945108">07502 945108</a> </p>
+            <p><strong>Email:</strong> <a href="mailto:hello@parrotmedia.co.uk">hello@parrotmedia.co.uk</a> </p>
+            <br>
+            <p><strong>Thank you for your business </strong></p>
+        </div>
+       
+    </div>
+   
+</body>
+
+</html>

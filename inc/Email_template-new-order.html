@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #ebeae9;
+
+        }
+      h2, h3,h4{
+            margin: 0.75rem 0 .25rem;
+        }
+        p{
+            margin: 0;
+            line-height: 1.75;
+        }
+        .email-body {
+            border: 1px solid rgb(154, 158, 162);
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #9dbea8;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        .email-content {
+            padding: 2rem;
+        }
+
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container email-body" style="width: 95%; max-width: 600px; margin: 0 auto;">
+        <img src="" alt="">
+        <div class="header">
+            <h1>New Order Received #{{order_id}}</h1>
+        </div>
+        <div class="email-content" style="background-color: #fff;" >
+            <h2>{{client_name}} has placed an order</h2>
+            <p>{{client_name}} has placed an order on your website for the following package:</p>
+            <h3>Service</h3>
+            <p>{{service_name}}</p>
+            <p>{{service_price}} per month</p>
+            <h3>Client Details</h3>
+            <h4>Name</h4>
+            <p>{{client_name}}</p>
+            <h4>Address</h4>
+            <p>{{street_address}}, {{city}}, {{county}}, {{post_code}}</p>
+            <h4>Contact Details</h4>
+            <p><strong>Phone No.</strong> {{tel}}</p>
+            <p><strong>Email</strong> {{email}}</p>
+            <h3>Business Details</h3>
+            <h4>Business Name</h4>
+            <p>{{business_name}}</p>
+            <h4>Current Domain Name</h4>
+            <p>{{url}}</p>
+            <h4>Website Details</h4>
+            <p>{{message}}</p>
+        </div>
+       
+    </div>
+   
+</body>
+
+</html>
