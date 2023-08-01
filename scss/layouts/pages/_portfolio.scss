@@ -1,0 +1,62 @@
+//colour scheme tabs for portfolio pages
+//css variables for changing as per each clients page
+.portfolio{
+    --font-primary:sans-serif;
+    --font-secondary:sans-serif;
+    --bg-col-primary:#8c8c8c;
+    --bg-col-secondary:#8c8c8c;
+    --bg-col-tertiary:#8c8c8c;
+}
+//wrapper
+.colour-tabs{
+    
+    padding: $spacer-2;
+}
+.colour-tab{
+    border: 2px solid $accent;
+}
+//color tab
+.color-tab-col{
+    height: 250px;
+    
+}
+.color-tab-col.primary{
+    
+        background-color: var(--bg-col-primary);
+   
+}
+.color-tab-col.secondary{
+    
+        background-color: var(--bg-col-secondary);
+   
+}
+.color-tab-col.tertiary{
+    
+        background-color: var(--bg-col-tertiary);
+   
+}
+.colour-tab-ref, .colour-tab-title{
+    padding: $spacer-2;
+}
+
+//class for displaying client font family
+.portfolio .font-primary{
+    font-family: var(--font-primary);
+    font-size: $fs-150;
+}
+.portfolio .font-secondary{
+    font-family: var(--font-secondary);
+    font-size: $fs-150;
+}
+
+.portfolio .hero img{
+    max-height: 250px;
+}
+
+// client logo grey out colous
+.client-logo{
+    filter: grayscale(100%);
+    max-width: 250px;
+place-self: center;
+    
+}

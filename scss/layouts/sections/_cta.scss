@@ -1,0 +1,15 @@
+//Full width call to action banner
+//Highlight section with bg colour
+.cta-section{
+    background-color: $primary-800;
+    padding-block: $spacer-4;
+    a{
+        color: $text-col;
+    }
+    a.btn-primary{
+        color: #fff;
+    }
+.cta-card{
+    background-color: $primary;
+}
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: $base-bg;
+    color: $text-col;
+}
+
+a {
+    color: $text-col;
+    font-weight: 400;
+    text-decoration-color: $primary;
+    text-decoration-thickness: 3px;
+    text-decoration-style: dotted;
+    text-underline-offset: .1rem;
+    display: inline-block;
+    transition: text-decoration-style 300ms ease-out;
+    &:hover {
+        opacity: 0.8;
+        text-decoration-style: solid;
+        
+        transition: text-decoration-style 300ms ease-out;
+    }
+}
+
+* {
+    ::-webkit-scrollbar {
+        //defines scrollbar width
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        //Actual scroll block
+        background: $primary;
+        border-radius: 0.375rem;
+
+        &:hover {
+            background: $primary-700;
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        // Track in which the scroll bar follows
+        background: #fff;
+        border: 1px solid $primary;
+        border-radius: 10px; //Makes the scroll bar a pill shape and pushes it down
+        margin-block: 0.25rem;
+    }
+}
+
+
+//Add this for firefox compatibility. Only supports two colours
+
+
+@supports (scrollbar-color: $primary #FFF5EC) {
+    * {
+        scrollbar-color: $primary #FFF5EC;
+        scrollbar-width: auto;
+    }
+}

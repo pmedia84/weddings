@@ -1,0 +1,139 @@
+.std-card{
+    padding: $spacer-3;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacer-2;
+    background-color:$primary-950;
+}
+.std-card-icon{
+    color: $accent;
+    background-color: $secondary;
+    width: min-content;
+    padding: $spacer-2;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+    .feather{
+        height: 100%;
+        width: auto;
+    }
+}
+
+//cta card
+.cta-card{
+    background-color: $accent;
+    padding: $spacer-3;
+}
+
+//featurecard
+
+.info-card{
+    background-color: $accent;
+  
+    display: flex;
+    gap: $spacer-2;
+    background-color: $primary-950;
+    padding: $spacer-2;
+    border-radius: $border-radius;
+}
+.info-card-icon{
+    font-size: 2rem;
+}
+
+//review card
+.review{
+    padding: $spacer-4;
+    align-items: flex-start;
+}
+.review-text{
+    position: relative;
+}
+.review-author, .review-author a{
+    color: $accent;
+}
+.review-text .icon{
+    opacity: .9;
+    color: $accent;
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    font-size: 1.5rem;
+}
+
+//profile-card
+.profile-card{
+    background-color: $primary-950;
+    a{
+        color:$accent;
+    }
+}
+.profile-card-body {
+    padding: $spacer-3;
+    
+}
+.profile-card-socials{
+    a{
+        font-size: 1.5rem;
+    }
+}
+@media(min-width:$md){
+    .profile-card{
+        display: flex;
+        gap: $spacer-4;
+    }
+    .profile-card-col{
+        width: 50%;
+    }
+}
+
+///pricing card
+.pricing-card{
+    border: 1px solid $primary;
+    border-radius: $border-radius;
+}
+.pricing-card-header{
+    padding: 1rem;
+    text-align: center;
+    background-color: $primary-950;
+    border-radius: inherit;
+    border-bottom: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    h3{
+        font-size: 2rem;
+    }
+}
+.pricing-card-body{
+    padding: 1rem;
+    text-align: center;
+}
+.pricing-card-price{
+    font-size: $fs-150;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+//card with a header img
+.img-card{
+    background-color: $primary-950;
+    border: 1px solid $accent;
+    border-radius: $border-radius;
+    img{
+        border-top-right-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+    }
+}
+.img-card-body{
+    padding: 1rem;
+}
+
+
+.alert-card{
+    background-color: $accent;
+    color: #fff;
+    padding: $spacer-3;
+}

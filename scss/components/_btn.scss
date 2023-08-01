@@ -1,0 +1,89 @@
+.btn-primary {//primary button
+    outline: none;
+    appearance: none;
+    background-color: $primary-btn;
+    color: #fff;
+    border: 1.5px solid $primary-btn;
+    border-radius: 5px;
+    padding: .375rem .75rem;
+    transition: box-shadow 300ms ease-out;
+    width: fit-content;
+   cursor: pointer;
+    &:focus{
+        box-shadow: 0 0 2px 3px $primary-btn;
+        transition: box-shadow 300ms ease-out;
+    }
+svg{
+    margin-right: 0.5rem;
+}
+    
+}
+::file-selector-button{
+    outline: none;
+    appearance: none;
+    background-color: $primary-500;
+    color: #fff;
+    border: 1.5px solid $primary-500;
+    border-radius: 5px;
+    padding: .375rem .75rem;
+    transition: box-shadow 300ms ease-out;
+}
+.btn-secondary{
+    background-color: white;
+    color: $text-col;
+}
+a.btn-primary{
+    
+    text-decoration: none;
+}
+//change bg color to the accent col
+.btn-accent{
+    background-color: $accent;
+}
+.btn-delete{
+    background-color: $error-response;
+    border-color: $error-response;
+    &:focus{
+        box-shadow: 0 0 2px 3px $error-response;
+        transition: box-shadow 300ms ease-out;
+    }
+}
+
+
+.btn-close{//close button
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.1em 0.1em;
+    color: $primary-btn;
+    font-size: 2rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background: transparent;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+    &:focus,
+    &:focus-within {
+        outline: 2px solid $accent;
+    }
+}
+.alert{
+    ///Alert button for buttons to draw attention
+    background-color: $error-response;
+    border-color: $error-response;
+}
+
+.btn-cta{
+    // call to action button
+    padding: .5em 1em;
+    font-size: $fs-125;
+}
+//large btn 100% width
+.btn-lg{
+    width: 100%;
+
+}

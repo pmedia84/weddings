@@ -1,0 +1,109 @@
+$transition: 350ms ease-in-out;
+$accordion-box-shadow: 0px 0px 5px rgba($primary, 0.5);
+
+.accordion-body{
+    border: 1px solid $primary;
+    border-radius: 0.375rem;
+    padding: 1.5rem;
+    background-color:rgba($accent, 0.35);
+}
+
+.accordion-item{
+    border: 1px solid $primary;
+    background-color: white;
+    &:first-of-type{
+        border-top-right-radius: 0.375rem;
+        border-top-left-radius: 0.375rem;
+    }
+    &:first-of-type .accordion-button{
+        border-top-right-radius: 0.375rem;
+        border-top-left-radius: 0.375rem;
+    }
+    &:last-of-type{
+        border-bottom-right-radius: 0.375rem;
+        border-bottom-left-radius: 0.375rem;
+    }
+    &:last-of-type .accordion-button{
+        border-bottom-right-radius: 0.375rem;
+        border-bottom-left-radius: 0.375rem;
+    }
+    &:last-of-type .accordion-button:is(.active-accordion){
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    &:not(:first-of-type){
+        border-top: 0;
+    }
+}
+.accordion-button{
+    position: relative;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    background-color: initial;
+    border: 0px;
+    color: currentColor;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: transparent;
+    transition:  $transition;
+    
+    &:hover{
+        background-color: $primary-950;
+        color: #0d0d0d;
+        transition: $transition;
+    }
+    &:focus{
+        background-color: $primary-800;
+        outline: 2px solid $primary;
+        //box-shadow: $accordion-box-shadow;
+        transition: outline $transition;
+    }
+
+    .feather{
+        transform: rotate(0);
+        transition: transform $transition;
+        stroke: $accent;
+        font-size: 1.5em;
+    }
+}
+
+//Settings for active accordion button
+.active-accordion{
+    background-color: $primary-800;
+    color: #0d0d0d;
+    transition: $transition;
+    
+    &:hover{
+        background-color: rgba($primary-950, 0.5);
+        transition: $transition;
+    }
+
+    .feather{
+        transform: rotate(180deg);
+        transition: transform $transition;
+    }
+
+}
+
+.accordion-panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition;
+    
+}
+
+.active-accordion-panel{
+    border-top: 1px solid $primary;
+    transition: $transition;
+}
+
+.accordion-panel-item{
+    padding: 1rem;
+}
+
+
