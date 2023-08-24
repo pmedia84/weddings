@@ -1,14 +1,14 @@
 //Colours
-$base-bg: #fbfaf9;
-$text-col: #060504;
-$primary: #9dbea8;
-$primary-btn: #9dbea8;
-$secondary: #fbfaf9;
-$secondary-btn: #ffffff;
-$accent: #a89dbe;
+$base-bg: #fbfefd;
+$text-col: #030706;
+$primary: hsl(339, 44%, 44%);
+$primary-btn: $primary;
+$secondary: hsl(159, 43%, 87%);
+$secondary-btn: $secondary;
+$accent: hsl(339, 44%, 47%);
 $grey: hsl(0, 0%, 89%);
-$hue: 140;
-$saturation: 20%;
+$hue: 339;
+$saturation: 44%;
 $primary-500: hsl($hue, $saturation, 50%);
 $primary-600: hsl($hue, $saturation, 60%);
 $primary-700: hsl($hue, $saturation, 70%);
@@ -19,3 +19,4 @@ $primary-950: hsl($hue, $saturation, 95%);
 //form colours
 $primary-form: #3b685c;
 $error-response: hsl(0, 95%, 67%);
+

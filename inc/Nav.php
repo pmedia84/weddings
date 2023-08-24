@@ -2,7 +2,7 @@
 
     <div class="nav-inner">
         <div class="nav-brand">
-            <a href="/"><img src="/assets/img/logo/logo.svg" alt="Parrot Media Logo" /></a>
+            <a href="/"><img src="/assets/img/logo/weddings-logo.svg" alt="Parrot Media Logo" /></a>
         </div>
         <div class="nav-links" data-state="closed">
             <div class="nav-links-header">
@@ -12,18 +12,22 @@
 
             </div>
             <ul class="nav-menu">
-            <?php if(isset($_SESSION['cart']) && count($_SESSION['cart'])>0):?>
-                <li>
-                    <a href="cart" aria-label="view shopping cart" class="nav-cart">
-                        <div class="cart-icon">
-                            <svg class="feather ">
-                                <use xlink:href="/assets/icons/feather.svg#shopping-cart"></use>
-                            </svg>
-                            <span class="cart-item-count"><?php echo count($_SESSION['cart']);?></span>
-                        </div>
-                    </a>
-                </li>
-                <?php endif;?>
+                <?php if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) : ?>
+                    <li>
+                        <a href="cart" aria-label="view shopping cart" class="nav-cart">
+                            <div class="cart-icon">
+                                <svg class="feather ">
+                                    <use xlink:href="/assets/icons/feather.svg#shopping-cart"></use>
+                                </svg>
+                                <span class="cart-item-count"><?php echo count($_SESSION['cart']); ?></span>
+                            </div>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <li><a href="">Features</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">About Us</a></li>
 
 
             </ul>

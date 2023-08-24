@@ -1,0 +1,11 @@
+Your selected colors:
+
+    Text: #030706 (RGB: 3, 7, 6)
+    Background: #fbfefd (RGB: 251, 254, 253)
+    Primary: #a23f61 (RGB: 162, 63, 97)
+    Secondary: #cfece2 (RGB: 207, 236, 226)
+    Accent: #ad4368 (RGB: 173, 67, 104)
+
+Realtime Colors link for selected colors: https://realtimecolors.com/?colors=030706-fbfefd-a23f61-cfece2-ad4368
+
+Thanks for using RealtimeColors.com!

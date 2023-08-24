@@ -1,5 +1,19 @@
 .feature-list{
-    li .feather{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: $spacer-2;
+    &_feature{
         color: $accent;
+        font-weight: 500;
+        padding: $spacer-2;
+        background-color: $primary-950;
+        border-radius: $border-radius;
+    }
+
+}
+@media(min-width:$md){
+    .feature-list{
+        flex-direction: row;
     }
 }
